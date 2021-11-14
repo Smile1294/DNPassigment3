@@ -1,0 +1,53 @@
+@page "/"
+
+@inject NavigationManager _manager;
+
+<AuthorizeView>
+    <NotAuthorized>
+    @if (true)
+        {
+            _manager.NavigateTo("/login");
+        }
+    </NotAuthorized>
+    <Authorized>
+        <NavBar></NavBar>
+        <div class="grid grid-cols-5 gap-4 justify-items-center mt-10">
+            <div></div>
+            <a class="flex justify-center flex-col" href="/Adults">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="120" height="120" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                </svg>
+                <div class="flex justify-center">
+                    Adults
+                </div>
+            </a>
+            <a class="flex justify-center flex-col" href="/AddAdult">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="120" height="120" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 11h6m-3 -3v6" />
+                </svg>
+                <div class="flex justify-center">
+                    Add New Adult
+                </div>
+            </a>
+            <a class="flex justify-center flex-col" href="/Adults">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-minus" width="120" height="120" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  <line x1="16" y1="11" x2="22" y2="11" />
+                </svg>
+                <div class="flex justify-center">
+                    Remove Adult
+                </div>
+            </a>              
+            <div></div>
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+

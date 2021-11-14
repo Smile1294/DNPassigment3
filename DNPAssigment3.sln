@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNPAssigment3Client", "DNPAssigment3Client\DNPAssigment3Client.csproj", "{1F94F241-2D49-40F6-B4C9-81B7A122A72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNPAssigment3Server", "DNPAssigment3Server\DNPAssigment3Server.csproj", "{7433BA6E-FA35-478C-BB47-D67909471C2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F94F241-2D49-40F6-B4C9-81B7A122A72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F94F241-2D49-40F6-B4C9-81B7A122A72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F94F241-2D49-40F6-B4C9-81B7A122A72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F94F241-2D49-40F6-B4C9-81B7A122A72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7433BA6E-FA35-478C-BB47-D67909471C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7433BA6E-FA35-478C-BB47-D67909471C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7433BA6E-FA35-478C-BB47-D67909471C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7433BA6E-FA35-478C-BB47-D67909471C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
